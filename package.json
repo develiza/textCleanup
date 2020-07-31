@@ -1,0 +1,15 @@
+{
+  "name": "regextrainings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "regex.js",
+  "scripts": {
+    "test": "mocha regex.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
+  }
+}
