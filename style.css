@@ -7,7 +7,8 @@
 }
 
 body {
-    background: linear-gradient(45deg, #fac9a9, rgb(221, 244, 255));
+    background: #ffffff;
+    /* background: linear-gradient(45deg, #fac9a9, rgb(221, 244, 255)); */
     width: 100vw;
 }
 
@@ -35,6 +36,7 @@ button {
     padding: 0.6rem;
     text-transform: uppercase;
 }
+
 
 .main-container {
     position: relative;
