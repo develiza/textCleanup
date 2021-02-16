@@ -16,14 +16,31 @@
     <section>
         <div class="main-container">
             <h1>Text Cleanup</h1>
+
+            <div class="intro">
+                <p>The text cleanup is a tool to help you generating a 'cleaner' text without too many empty spaces.</p>
+                <ul>
+                    <li>It eliminates excessive multiple spaces between, before and after words: <span
+                            class="example">'hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;there'</span> becomes <span
+                            class="example">'hi there'</span></li>
+                    <li>It eliminates spaces before dots, question marks and exclamations: <span class="example">'hi
+                            there&nbsp;&nbsp;!'</span> becomes <span class="example">'hi there!'</span></li>
+                    <li>It adds spaces after dots, question marks and exclamations where there are none: <span
+                            class="example">'hi.hello'</span> becomes <span class="example">'hi. hello'</span></li>
+                    <li>It does not remove line breaks, such as in: <br><span
+                            class="example">'hey<br><br>&nbsp;ho'</span> </li>
+                </ul>
+            </div>
             <div class="text-area">
                 <h2>Add text</h2>
-                <textarea name="" id="add-text" cols="50" rows="20"></textarea>
+                <textarea name="" id="add-text"></textarea>
                 <button id="submit-text">Cleanup text</button>
             </div>
             <div class="result">
                 <h2>Result</h2>
-                <p id="clean-text"></p>
+                <textarea class="result-box" id="clean-text">
+                </textarea>
+                <button id="copy-text"><svg class="clipboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"/></svg></button>
 
             </div>
         </div>

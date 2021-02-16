@@ -7,7 +7,11 @@
 }
 
 body {
-    background: linear-gradient(45deg, #fac9a9, rgb(221, 244, 255));
+    /* background: linear-gradient(45deg, #fac9a9, rgb(221, 244, 255)); */
+    background-image: url(./src/assets/books.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
 }
 
@@ -24,45 +28,93 @@ p {
 }
 
 button {
-    position: absolute;
-    top: 520px;
-    /* margin-top: 0.5em; */
     border: 0px;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #085579;
-    box-shadow: 2px 1px 8px 1px #4f595d;
+    box-shadow: 2px 0px 6px 1px #4f595d;
     color: #ffffff;
     padding: 0.6rem;
     text-transform: uppercase;
 }
 
+.clipboard {
+    width: 20px;
+    fill: #ffffff;
+}
+
+.example {
+    font-weight: 600;
+    color: #753a18;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 2em 0 2em;
+    align-items:center;
+}
+
+.intro ul {
+    margin-top: 1em;
+}
+
+.intro li {
+    margin-left: 2em;
+}
+
 .main-container {
-    position: relative;
-    margin-left: 2%;
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 6em 6em 6em;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.main-container h1 {
+    text-align: center;
 }
 
 .text-area {
-    position: absolute;
-    left: 10%;
-    top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .text-area textarea {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #085579;
     border-radius: 5px;
+    min-height: 30vh;
     padding: 5px;
-    width: 80vw;
+    width: 75vw;
     font-size: 1.2rem;
+    resize: both;
+}
+
+.text-area button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
 }
 
 .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.result-box {
     border: 1px solid #085579;
     border-radius: 5px;
-    left: 10%;
     min-height: 20vh;
     padding: 5px;
-    position: absolute;
-    top: 700px;
-    width: 80vw;
+    width: 75vw;
+}
+
+.result button {
+    margin-top:2em;
 }
