@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(./src/assets/books.jpg);
+    background-image: url(../assets/books.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
