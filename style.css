@@ -1,14 +1,13 @@
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #085579;
+    color: #023c57;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    /* background: linear-gradient(45deg, #fac9a9, rgb(221, 244, 255)); */
-    background-image: url(./src/assets/books.png);
+    background-image: url(./src/assets/books.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,15 +22,23 @@ h2 {
     font-size: 1.5rem;
 }
 
-p {
-    font-size: 1.2rem;
+textarea,p,li {
+    font-size: 1.1em;
+    font-weight: 200;
 }
 
+.title {
+    text-align: center;
+    color:#f6f8f7;
+    font-weight: 300;
+    font-size:44px;
+    margin: .7em 0em;
+}
 button {
     border: 0px;
     border-radius: 4px;
-    background-color: #085579;
-    box-shadow: 2px 0px 6px 1px #4f595d;
+    background-color: #c85102;
+    box-shadow: 1px 0px 6px 1px #5d534f;
     color: #ffffff;
     padding: 0.6rem;
     text-transform: uppercase;
@@ -44,7 +51,7 @@ button {
 
 .example {
     font-weight: 600;
-    color: #753a18;
+    color: #c85102;
 }
 
 .intro {
@@ -67,8 +74,8 @@ button {
     flex-direction: column;
     justify-content: space-around;
     margin: 0 6em 6em 6em;
-    padding: 50px;
-    background-color: rgba(255,255,255,0.6);
+    padding: 1em;
+    background-color: rgba(229, 236, 231, 0.6);
 }
 
 .main-container h1 {
@@ -90,21 +97,20 @@ button {
     min-height: 30vh;
     padding: 5px;
     width: 75vw;
-    font-size: 1.2rem;
     resize: both;
 }
 
 .text-area button {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .result {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .result-box {
@@ -116,5 +122,6 @@ button {
 }
 
 .result button {
-    margin-top:2em;
+    margin-top:1em;
+    margin-bottom: 2em;
 }
